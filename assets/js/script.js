@@ -59,14 +59,16 @@ class Reproductor extends Multimedia {
 }
 
 //Instanciar la clase hija pasando como argumento la URL y el id
-let musica = new Reproductor ("https://www.youtube.com/embed/a6aqKkoCMrA","musica") //<iframe width="677" height="381" src="https://www.youtube.com/embed/VkLtkOHphMk?list=RDGMEMYH9CUrFO7CfLJpaD7UR85w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-let pelicula = new Reproductor("https://www.youtube.com/embed/Lsglk8dqOJI","peliculas")//<iframe width="752" height="315" src="https://www.youtube.com/embed/QY0gaf-WyYM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+let musica = new Reproductor ("https://www.youtube.com/embed/a6aqKkoCMrA","musica") 
+let pelicula = new Reproductor("https://www.youtube.com/embed/Lsglk8dqOJI","peliculas")
 let serie = new Reproductor ("https://www.youtube.com/embed/xu4K6NHt3g8","series")//<iframe width="677" height="381" src="https://www.youtube.com/embed/xu4K6NHt3g8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+
+musica.setInicio(60)
+pelicula.setInicio(120)
 serie.setInicio(30) 
 //Invocar al método “playMultimedia” para cada instancia
 musica.playMultimedia()
 pelicula.playMultimedia()
 serie.playMultimedia()
 
-//<iframe width="677" height="381" src="https://www.youtube.com/embed/Lsglk8dqOJI" title="YouTube video player" frameborder=; encryptedame>
